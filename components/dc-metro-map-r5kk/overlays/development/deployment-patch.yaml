@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-r5kk
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/push-pyxis-nsld-tenant/appstudio/dc-metro-map-r5kk@sha256:2cee58570dd14d310275a56e07c1a7502524896aad984219430efb825e03b421
+        name: my-nodejs
+        resources: {}
+status: {}
